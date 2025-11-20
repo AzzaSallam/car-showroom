@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl font-bold;
+  }
+  h2 {
+    @apply text-4xl font-semibold;
+  }
+  h3 {
+    @apply text-3xl font-semibold;
+  }
+  h4 {
+    @apply text-2xl font-medium;
+  }
+  h5 {
+    @apply text-xl font-medium;
+  }
+  h6 {
+    @apply text-lg font-medium;
+  }
+  p {
+    @apply text-base leading-relaxed;
+  }
+}
+
+.margin-lr {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+.padding-x{
+  padding-left : '4rem' !important;
+  padding-right: '4rem' !important;
+}
+
+.nav-color {
+  background-color: #8e8c8c88;
+  color: white;
+  z-index: 10;
+}
+
+.links li {
+  transition: 0.5s all ease-in-out;
+}
+
+.links li:hover {
+  color: rgb(206, 9, 9);
+  border-bottom: 1px solid rgb(206, 9, 9);
+}
+
+/* Fade Up Animation for hero section content */
+@keyframes reveal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animate-reveal {
+  animation: reveal 900ms ease-out forwards;
+  transform-origin: left;
+}
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9rem;
+  }
+}
+.animate-underline {
+  animation: underline 700ms ease-out 900ms forwards;
+}
+
+/* Swiper Customization */
+.swiper{
+  padding: 3rem !important;
+}
+
+.cars-swiper .swiper-pagination-bullet {
+  background-color: #b91c1c;
+  opacity: 0.4;
+}
+
+.cars-swiper .swiper-pagination-bullet-active {
+  background-color: #dc2626;
+  opacity: 1;
+}
+
+.cars-swiper .swiper-button-next,
+.cars-swiper .swiper-button-prev {
+  color: #dc2626;
+}
+
+.pcard{
+  padding: 0.5rem 1rem !important;
 }

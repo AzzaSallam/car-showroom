@@ -1,0 +1,78 @@
+{
+  "brands": {
+    "toyota": "Toyota",
+    "skoda": "Skoda"
+  },
+  "models": {
+    "corolla": "Corolla",
+    "fantasia": "Fantasia",
+    "corolla_turkey": "Corolla (Turkey)",
+    "a8_style": "Skoda A8 Style"
+  },
+  "variants": {
+    "variant_2": "Second Trim",
+    "variant_2_autopark": "Second Trim (Auto Park)"
+  },
+  "conditions": {
+    "condition_new": "Brand new, factory condition",
+    "condition_except_door": "Factory condition except door and fender",
+    "condition_like_new": "Factory condition, like new"
+  },
+  "service": {
+    "service_agency": "Agency Services"
+  },
+  "license": {
+    "license_2years": "2 Years License"
+  },
+  "transmission": { "automatic": "Automatic", "manual": "Manual" },
+  "color": { "red": "Red", "white": "White" },
+  "mileage": "{{count}} km" ,
+  
+  "________________________NAVBAR LINKS_________________________________" :"," ,
+
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "services": "services"
+  } ,
+
+  "________________________Our Services_________________________________" :"," ,
+
+  "services": {
+    "title": "Our Services",
+    "suptitle":"Professional care for every detail",
+    "selling": {
+      "title": "Car Selling",
+      "desc": "Explore a wide range of new and used cars in excellent condition with guaranteed reliability."
+    },
+    "buying": {
+      "title": "Car Buying",
+      "desc": "List your car with us and get the best market value with professional marketing and high-quality photos."
+    },
+    "exchange": {
+      "title": "Car Exchange",
+      "desc": "Replace your old car with a new or used car easily and effortlessly (for others)"
+    }
+  } ,
+
+  
+"________________________Why_________________________________" :"," ,
+
+  "why": {
+    "title": "Why Choose Us ?",
+    "suptitle":"Excellence in every detail",
+    "products": {
+      "title": "Premium Products",
+      "desc": "Only the best products for your vehicle."
+    },
+    "quality": {
+      "title": "Quality Guaranteed",
+      "desc": "100% satisfaction guarantee on all our services."
+    },
+    "fast": {
+      "title": "Fast Service",
+      "desc": "Quick turnaround without compromising on quality." 
+    }
+  }
+}
