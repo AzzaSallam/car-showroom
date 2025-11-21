@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import WhatsAppBtn from "./components/WhatsAppBtn";
 import "./globals.css";
 import InitI18n from "./initI18n";
 import { Amiri } from "next/font/google";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={amiri.className}>
         <InitI18n />
         <Navbar/>
+        <WhatsAppBtn/>
         {children}
       </body>
     </html>

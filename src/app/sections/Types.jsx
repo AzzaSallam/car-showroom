@@ -12,7 +12,7 @@ const Types = () => {
     ]
 
   return (
-    <div className='flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 px-4 sm:px-6 md:px-8 py-18 sm:py-20 md:py-28 lg:py-32 xl:py-36'>
+    <div className='flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 px-4 sm:px-6 md:px-8 py-18 sm:py-20 md:py-28 lg:py-30 xl:py-36'>
         {
             imgs.map((img , idx) =>(
                 <div key={idx} className='border-2 border-gray-200 rounded-lg p-3 sm:p-4 md:p-6 lg:p-8'>

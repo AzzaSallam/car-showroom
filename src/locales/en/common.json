@@ -1,4 +1,6 @@
 {
+  "name":"Arabitak Motors",
+  "manage" :"Managed by Mr. Mahmoud Gaafer",
   "brands": {
     "toyota": "Toyota",
     "skoda": "Skoda"
@@ -34,8 +36,13 @@
     "home": "Home",
     "about": "About Us",
     "gallery": "Gallery",
-    "services": "services"
+    "services": "Services"
   } ,
+  "________________________Our Gallary_________________________________" :"," ,
+  "gallary":{
+    "title":"In Our Showroom",
+    "suptitle": "A Look Inside Our Showroom"
+  },
 
   "________________________Our Services_________________________________" :"," ,
 
@@ -74,5 +81,16 @@
       "title": "Fast Service",
       "desc": "Quick turnaround without compromising on quality." 
     }
+  },
+
+  "________________________footer_________________________________" :"," ,
+  "footer" :{
+    "brand": "Arabitak Motors",
+    "contact_us": "Contact Us",
+    "phone1": "(+20)1002354425",
+    "phone2": "(+20)1222402258",
+    "location": "Ring Road - Next to Saad Mohamed Saad Showroom - Opposite Adel El Khafa Ceramics - Arabitak Motors Showroom",
+    "follow_us": "Follow Us",
+    "rights": "All rights reserved."
   }
 }

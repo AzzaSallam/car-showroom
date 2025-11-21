@@ -6,8 +6,11 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 const CarsGallary = () => {
+  const { i18n } = useTranslation();
+const isRTL = i18n.language === 'ar';
 
   const [cars , setCars] = useState([]);
 
@@ -19,7 +22,7 @@ const CarsGallary = () => {
 
 
   return (
-    <section className="px-0 sm:px-4 md:px-6 lg:px-8 sm:py-12 md:py-16">
+    <section className="px-0 sm:px-4 md:px-6 lg:px-8 sm:py-12 md:py-1" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="px-4 sm:px-6 md:px-8">
         <Swiper
           className="cars-swiper"
@@ -28,6 +31,8 @@ const CarsGallary = () => {
           pagination={{ clickable: true }}
           spaceBetween={16}
           slidesPerView={1}
+          dir={isRTL ? 'rtl' : 'ltr'}
+          key={isRTL ? 'rtl' : 'ltr'} // Force re-render when direction changes
           breakpoints={{
             640: { 
               slidesPerView: 2,

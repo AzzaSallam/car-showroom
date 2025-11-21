@@ -18,7 +18,7 @@ const Why = () => {
     {t("why.suptitle")}
   </p>
 
-  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10'>
+  <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10'>
     {/* FIRST FEATURE */}
     <div className='flex items-center justify-center flex-col gap-4 sm:gap-5 p-6 sm:p-8 rounded-xl hover:bg-gray-50 transition-colors duration-300'>
       <div className='bg-gradient-to-br from-gray-800 to-gray-900 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300'>

@@ -9,20 +9,23 @@ const Services = () => {
   return (
     <div className='text-center px-4 sm:px-6 md:px-8 lg:px-12 mb-8 sm:mb-12 md:mb-16 mt-12 sm:mt-16 md:mt-20 lg:mt-24'>
       <h2 className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black/80 mb-8 sm:mb-10 md:mb-12'>
-        Our Services
+        {t("services.title")}
       </h2>
+      <p className='text-sm sm:text-base md:text-lg text-gray-500 mb-8 sm:mb-10 md:mb-12'>
+        {t("services.suptitle")}
+      </p>
 
       <div className='space-y-5 sm:space-y-8 md:space-y-10'>
         {/* FIRST LINE OF SERVICES */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-          {/* Image - Hidden on mobile, visible on tablet+ */}
-          <div className="hidden md:block col-span-1 w-full h-64 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
+          {/* Image  */}
+          <div className="hidden md:block col-span-1 w-full h-80 rounded-2xl overflow-hidden shadow-lg">
             <Image 
               src="/assets/icons/serv1.jpg" 
               width={600} 
               height={400} 
               alt="Selling service"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
           </div>
           
@@ -60,7 +63,7 @@ const Services = () => {
           </div>
 
           {/* Image - Hidden on mobile, visible on tablet+ */}
-          <div className="hidden md:block w-full h-64 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
+          <div className="hidden md:block w-full h-[600px] lg:h-80 rounded-2xl overflow-hidden shadow-lg">
             <Image 
               src="/assets/icons/serv2.jpg" 
               width={600} 

@@ -23,7 +23,7 @@ const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className='bg-gray-950 z-50 text-white sticky top-0 w-full shadow-md' style={{paddingRight : '1rem' , paddingLeft:'1rem'}}>
+    <nav className='bg-gray-950 z-50 text-white relative top-0 w-full ' style={{paddingRight : '1rem' , paddingLeft:'1rem'}}>
         <div className='flex items-center justify-between py-4 max-w-6xl mx-auto w-full'>
             <Image className=' bg-gray-200 rounded-full relative top-2 shrink-0' src='/assets/logo.png' width={60} height={60} alt='عربيتك موتورز' ></Image>
 
