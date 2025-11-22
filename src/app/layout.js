@@ -12,6 +12,9 @@ const amiri = Amiri({
 
 export const metadata = {
   title: "Cars Gallary",
+  icons: {
+    icon: "/favicon.png", 
+  },
 };
 
 export default function RootLayout({ children }) {
