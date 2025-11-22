@@ -15,7 +15,7 @@ const Hero = () => {
         {/* BIG RED CIRCLE  */}
         <div className={`absolute 
           ${isRTL
-            ? 'right-1/2 translate-x-1/2 md:right-[-120px] md:translate-x-0 lg:right-[10px]' 
+            ? 'right-1/2 translate-x-1/2 md:right-[-120px] md:translate-x-0 lg:right-[450px]' 
             : 'left-1/2 -translate-x-1/2 md:-translate-x-1/4 '
           }
           top-16 md:top-48 lg:top-11
@@ -46,8 +46,8 @@ const Hero = () => {
 
           <p className={`text-gray-200/80 inline-block text-lg relative -top-18 sm:-top-12 md:-top-12
             ${isRTL
-              ? 'sm:right-44 -right-10  top-[-40px]  md:right-[-20px] ' 
-              : 'left-20 sm:left-[-165px] md:left-[-200px]'
+              ? 'xxs:right-28 xs:sm:right-28 sm:right-20 sm:md:left-10 top-[-40px] md:right-[-20px]  ' 
+              : 'left-20 sm:left-[-165px]  md:right-10'
             }`}>
               {t("manage")}
             <span className={`block h-0.5 bg-[#B71C1C] mt-2 w-0 animate-underline
@@ -65,10 +65,10 @@ const Hero = () => {
         className={`absolute w-[600px] -bottom-16 
           sm:w-[600px] sm:-bottom-20 
           md:w-[750px] md:bottom-[-100px]
-          lg:w-[1200px] lg:bottom-[-160px]
+          lg:w-[1100px] lg:bottom-[-160px]
           ${isRTL
-            ? 'sm:left-[-26px] md:left-[-150px] lg:left-[-230px] scale-x-[-1]' 
-            : 'sm:right-[-105px] md:right-[-150px] lg:right-[-230px]'
+            ? 'sm:left-[-120px] md:left-[-150px] lg:left-[-230px] scale-x-[-1]' 
+            : 'sm:right-[-105px]  md:right-[-100px] lg:right-[-230px]'
           }`}
       />
     </div>
