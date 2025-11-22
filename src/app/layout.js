@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={amiri.className}>
+      <body className={amiri.className} suppressHydrationWarning={true}>
         <InitI18n />
         <Navbar/>
         <WhatsAppBtn/>

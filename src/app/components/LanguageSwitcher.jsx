@@ -7,9 +7,14 @@ export default function LanguageSwitcher() {
 
   const toggleLanguage = () => {
     const newLang = i18n.language === "en" ? "ar" : "en";
+
     i18n.changeLanguage(newLang);
-    document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = newLang;
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lang", newLang);
+      document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
+      document.documentElement.lang = newLang;
+    }
   };
 
   return (
@@ -21,4 +26,3 @@ export default function LanguageSwitcher() {
     </button>
   );
 }
-

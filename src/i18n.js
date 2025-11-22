@@ -1,3 +1,5 @@
+"use client";
+
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -12,15 +14,22 @@ if (!i18next.isInitialized) {
         en: { translation: en },
         ar: { translation: ar },
       },
-      lng: "en", 
-      fallbackLng: "en",
+
+      lng: typeof window !== "undefined"
+      ? localStorage.getItem("lang") || "ar"
+      : "ar",
+
+      fallbackLng: "ar",
       interpolation: { escapeValue: false },
     });
 }
 
-if (typeof document !== "undefined") {
-  document.documentElement.lang = "en";
-  document.documentElement.dir = "ltr";
+if (typeof window !== "undefined") {
+  const lang = i18next.language;
+  requestAnimationFrame(() => {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  });
 }
 
 export default i18next;

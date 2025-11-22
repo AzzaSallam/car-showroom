@@ -32,7 +32,7 @@ const isRTL = i18n.language === 'ar';
           spaceBetween={16}
           slidesPerView={1}
           dir={isRTL ? 'rtl' : 'ltr'}
-          key={isRTL ? 'rtl' : 'ltr'} // Force re-render when direction changes
+          key={isRTL ? 'rtl' : 'ltr'} 
           breakpoints={{
             640: { 
               slidesPerView: 2,

@@ -16,13 +16,13 @@ const Hero = () => {
         <div className={`absolute 
           ${isRTL
             ? 'right-1/2 translate-x-1/2 md:right-[-120px] md:translate-x-0 lg:right-[10px]' 
-            : 'left-1/2 -translate-x-1/2 md:left-[-120px] md:-translate-x-1/3 lg:left-[10px]'
+            : 'left-1/2 -translate-x-1/2 md:-translate-x-1/4 '
           }
-          top-16 md:top-48 lg:top-30
+          top-16 md:top-48 lg:top-11
           w-[350px] h-[350px] md:w-[1300px] md:h-[1300px] 
           bg-[#B71C1C]/80 blur-3xl rounded-full`}></div>
 
-        {/* RED SMALL CIRCLE TOP t */}
+        {/* RED SMALL CIRCLE TOP */}
         <div className={`hidden md:block absolute top-28 
           ${isRTL ? 'right-[550px]' : 'left-[550px]'} 
           w-[50px] h-[50px] bg-[#B71C1C]/80 rounded-full`}></div>
@@ -46,8 +46,8 @@ const Hero = () => {
 
           <p className={`text-gray-200/80 inline-block text-lg relative -top-18 sm:-top-12 md:-top-12
             ${isRTL
-              ? '-right-15 top-[-40px] sm:right-[-46px] md:right-[-20px] ' 
-              : 'left-20 sm:left-[-46px] md:left-[-200px]'
+              ? 'sm:right-44 -right-10  top-[-40px]  md:right-[-20px] ' 
+              : 'left-20 sm:left-[-165px] md:left-[-200px]'
             }`}>
               {t("manage")}
             <span className={`block h-0.5 bg-[#B71C1C] mt-2 w-0 animate-underline
@@ -62,13 +62,13 @@ const Hero = () => {
         alt="Hero car"
         width={1200}
         height={500}
-        className={`absolute w-[600px] -bottom-14 
-          sm:w-[600px] sm:-bottom-20
+        className={`absolute w-[600px] -bottom-16 
+          sm:w-[600px] sm:-bottom-20 
           md:w-[750px] md:bottom-[-100px]
           lg:w-[1200px] lg:bottom-[-160px]
           ${isRTL
             ? 'sm:left-[-26px] md:left-[-150px] lg:left-[-230px] scale-x-[-1]' 
-            : 'sm:right-[-26px] md:right-[-150px] lg:right-[-230px]'
+            : 'sm:right-[-105px] md:right-[-150px] lg:right-[-230px]'
           }`}
       />
     </div>
