@@ -10,7 +10,7 @@ const Why = () => {
   const {t} = useTranslation() ;
 
   return (
-    <div className='text-center px-4 sm:px-6 md:px-8 lg:px-12 mb-8 sm:mb-12 md:mb-16 mt-12 sm:mt-16 md:mt-20 lg:mt-24'>
+    <div id="about" className='text-center px-4 sm:px-6 md:px-8 lg:px-12 mb-8 sm:mb-12 md:mb-16 mt-12 sm:mt-16 md:mt-20 lg:mt-24'>
   <h2 className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black/80 mb-2 sm:mb-3'>
     {t("why.title")}
   </h2>
@@ -67,7 +67,7 @@ const Why = () => {
       </div>
     </div>
   </div>
-</div>
+    </div>
   )
 }
 
