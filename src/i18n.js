@@ -15,10 +15,6 @@ if (!i18next.isInitialized) {
         ar: { translation: ar },
       },
 
-      lng: typeof window !== "undefined"
-      ? localStorage.getItem("lang") || "ar"
-      : "ar",
-
       fallbackLng: "ar",
       interpolation: { escapeValue: false },
     });

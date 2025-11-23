@@ -2,7 +2,7 @@ const config = {
   theme: {
     extend: {
       screens: {
-        'xxs' : '385px',
+        'xxs' : '372px',
         'xs': '388px',  
         'smd':'786px'
       },

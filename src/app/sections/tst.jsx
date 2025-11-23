@@ -34,7 +34,7 @@
 
           <p className={`text-gray-200/80 inline-block text-lg relative -top-18 sm:-top-12 md:-top-12
             ${isRTL
-              ? 'xxs:right-28 xs:sm:right-28 sm:right-20 sm:md:left-10 top-[-40px] md:right-[-20px]  ' 
+              ? ' xxs:right-28 sm:right-20 sm:md:left-10 top-[-40px] md:right-[-20px]  ' 
               : 'left-20 sm:left-[-165px]  md:right-10'
             }`}>
               {t("manage")}
