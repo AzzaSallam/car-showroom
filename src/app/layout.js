@@ -1,4 +1,5 @@
 import DirectionController from "./components/DirectionController";
+import FacebookBtn from "./components/FacebookBtn";
 import Navbar from "./components/Navbar";
 import WhatsAppBtn from "./components/WhatsAppBtn";
 import "./globals.css";
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <InitI18n />
         <DirectionController/>
         <Navbar/>
+        <FacebookBtn/>
         <WhatsAppBtn/>
         {children}
       </body>
