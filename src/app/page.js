@@ -13,7 +13,7 @@ export default function Home() {
   const { t } = useTranslation();
 
   return (
-   <div className="">
+   <div className="overflow-x-hidden">
       <Hero/>
       <Types/>
       <Category/>

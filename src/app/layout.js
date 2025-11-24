@@ -1,3 +1,4 @@
+import DirectionController from "./components/DirectionController";
 import Navbar from "./components/Navbar";
 import WhatsAppBtn from "./components/WhatsAppBtn";
 import "./globals.css";
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={amiri.className} suppressHydrationWarning={true}>
         <InitI18n />
+        <DirectionController/>
         <Navbar/>
         <WhatsAppBtn/>
         {children}

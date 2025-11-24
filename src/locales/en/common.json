@@ -59,7 +59,7 @@
     },
     "exchange": {
       "title": "Car Exchange",
-      "desc": "Replace your old car with a new or used car easily and effortlessly (for others)"
+      "desc": "Trade in your old car for a new or used one with ease. We offer a trade-in service to help you find the perfect car at the best price."
     }
   } ,
 
@@ -71,7 +71,7 @@
     "suptitle":"Excellence in every detail",
     "products": {
       "title": "Premium Products",
-      "desc": "Only the best products for your vehicle."
+      "desc": "Only the best car models for you"
     },
     "quality": {
       "title": "Quality Guaranteed",

@@ -16,11 +16,12 @@ const Footer = () => {
 
   return (
     <footer className='bg-gray-950 text-gray-100 mt-12 sm:mt-16 md:mt-20 lg:mt-24' dir={isRTL ? 'rtl' : 'ltr'}>
-      <div className='flex flex-col md:flex-row items-center justify-center md:justify-around gap-8 md:gap-6 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-16'>
+      <div className='flex flex-col md:flex-row items-center md:items-start justify-center md:justify-around gap-8 md:gap-6 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-16'>
     
         {/* Logo Section */}
         <div className='text-center'>
-          <div className='flex justify-center mb-3 sm:mb-4'>
+          <h4 className='text-red-500 text-lg mb-4 sm:text-xl font-semibold'>{t("footer.brand")}</h4>
+          <div className='flex justify-center  sm:mb-4'>
             <Image 
               className='bg-gray-200 rounded-full' 
               src='/assets/logo.png' 
@@ -29,7 +30,6 @@ const Footer = () => {
               alt='عربيتك موتورز'
             />
           </div>
-          <h4 className='text-red-500 text-lg sm:text-xl font-semibold'>{t("footer.brand")}</h4>
         </div>
     
         {/* Contact Section */}

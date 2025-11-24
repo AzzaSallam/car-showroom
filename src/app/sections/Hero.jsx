@@ -37,7 +37,7 @@ const Hero = () => {
 
         {/* CONTENT  */}
         <div className={`p-6 relative -top-4 md:-top-14 
-          ${isRTL ? 'md:right-48 lg:right-18' : 'lg:left-18'}`}>
+          ${isRTL ? ' md:right-48 lg:right-18' : 'right-10 lg:left-18'}`}>
 
           <h1 className={`relative -top-12 text-4xl md:text-6xl font-extrabold text-white inline-block overflow-hidden mb-4
             ${isRTL ? 'right-12' : 'left-12'}`}>
@@ -66,11 +66,11 @@ const Hero = () => {
         width={1200}
         height={500}
         className={`absolute w-[550px] -bottom-15 
-          md:w-[650px] md:left-[80px] md:-bottom-20
+          md:w-[600px] md:left-[80px] md:-bottom-20
           lg:w-[850px] lg:bottom-[-120px]
           ${isRTL
-            ? 'lg:left-1 scale-x-[-1]' 
-            : 'md:left-[100px] lg:left-[175px] xl:left-[640px] '
+            ? 'lg:left-1 scale-x-[-1] xl:right-[650px]' 
+            : ' md:left-[165px] lg:left-[250px] xl:left-[570px] '
           }`
         }
       />

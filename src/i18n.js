@@ -20,12 +20,5 @@ if (!i18next.isInitialized) {
     });
 }
 
-if (typeof window !== "undefined") {
-  const lang = i18next.language;
-  requestAnimationFrame(() => {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  });
-}
 
 export default i18next;
